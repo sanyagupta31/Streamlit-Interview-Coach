@@ -1,44 +1,58 @@
 
+
 ````markdown
-# 💡 Streamlit Interview Coach
-
-An interactive AI-powered interview preparation app built with **Streamlit** and **Google Gemini API**. It allows users to practice mock interview questions tailored to their selected role, and receive personalized feedback on their answers.
-
-👉 **Live App:** [Click here to try it out!](https://app-interview-coach-pxw2tcine4ajf8gbzvngvn.streamlit.app/)
+<div align="center">
+  <img src="https://img.shields.io/badge/Powered%20By-Google%20Gemini-ffaf00?style=for-the-badge&logo=google" alt="Gemini Badge">
+  <img src="https://img.shields.io/badge/Made%20With-Streamlit-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit Badge">
+  <h1>💡 AI Interview Coach</h1>
+  <p><strong>Practice. Improve. Succeed. 🚀</strong></p>
+  <p>Get real-time interview questions and feedback using <strong>Gemini AI</strong> and <strong>Streamlit</strong></p>
+  <a href="https://app-interview-coach-pxw2tcine4ajf8gbzvngvn.streamlit.app/">
+    <img src="https://img.shields.io/badge/Try%20Live%20Demo-Click%20Here-brightgreen?style=for-the-badge" alt="Live Demo">
+  </a>
+</div>
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- ✅ Select a job role (e.g., Software Engineer, Data Scientist, etc.)
-- ✅ Choose number of interview questions (1 to 10)
-- ✅ AI-generated role-specific technical questions
-- ✅ Write your answers directly in the app
-- ✅ Get Gemini-based feedback with:
+- 🎯 Select your **job role** (e.g., Data Scientist, Cloud Engineer)
+- 🧠 Get **technical interview questions** based on your role
+- 📝 Type your answers within the app
+- 🤖 Gemini evaluates with:
   - Score out of 10
   - 2 strengths
-  - 2 suggestions for improvement
+  - 2 improvement tips
+- 🌐 Deployable to **Streamlit Cloud**
+
+---
+
+## 📸 Preview
+
+> 📌 Add this later (optional):
+> - Screenshot or GIF of your app in action here.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- [Streamlit](https://streamlit.io/) – Web app framework  
-- [Google Gemini API](https://ai.google.dev/) – Generative AI for questions & evaluation  
-- Python
+- 🔤 Python
+- 🧠 [Google Gemini API](https://ai.google.dev/)
+- 🌐 [Streamlit](https://streamlit.io/)
+- 🔒 `.streamlit/secrets.toml` for API key management
 
 ---
 
-## 📦 Installation Instructions
+## 🚀 Getting Started
 
-### 1. Clone this Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/sanyagupta31/Streamlit-Interview-Coach.git
 cd Streamlit-Interview-Coach
 ````
 
-### 2. Install Required Packages
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -46,15 +60,15 @@ pip install -r requirements.txt
 
 ### 3. Add Your Gemini API Key
 
-Create a file at `.streamlit/secrets.toml` and paste the following:
+Create a file at `.streamlit/secrets.toml`:
 
 ```toml
 GEMINI_API_KEY = "your_actual_api_key_here"
 ```
 
-> 🔐 Replace `"your_actual_api_key_here"` with your valid Gemini API key.
+> ❗ **Do NOT share this file or upload it to GitHub.**
 
-### 4. Run the App
+### 4. Run the App Locally
 
 ```bash
 streamlit run app.py
@@ -62,38 +76,26 @@ streamlit run app.py
 
 ---
 
-## 📂 File Structure
+## ☁️ Deployment (Streamlit Cloud)
 
-```
-.
-├── app.py                   # Main Streamlit application
-├── requirements.txt         # Python dependencies
-└── .streamlit/
-    └── secrets.toml         # Secure place for your API key
-```
+1. Push code to GitHub (excluding your secrets file).
+2. Visit: [https://streamlit.io/cloud](https://streamlit.io/cloud)
+3. Connect your GitHub repo.
+4. Add your `GEMINI_API_KEY` in **App Settings > Secrets**.
 
 ---
 
-## 🔐 Security Note
-
-⚠️ **Never push your `.streamlit/secrets.toml` to GitHub.**
-Use `.gitignore` to keep it private, or securely manage secrets using [Streamlit Cloud Secrets Manager](https://docs.streamlit.io/streamlit-cloud/secrets-management).
-
----
-
-## 🙋‍♀️ Author
+## 🙋‍♀️ About Me
 
 **Sanya Gupta**
+🎓 BSc (Hons) CS & Data Analytics, IIT Patna
 🔗 [GitHub](https://github.com/sanyagupta31) 
+
 ---
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
-```
-
 ---
 
-
-```
